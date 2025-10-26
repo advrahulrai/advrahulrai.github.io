@@ -1,9 +1,3 @@
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -64,3 +58,24 @@
 				});
 
 })(jQuery);
+
+function showModalIfNeeded() {
+  if (!sessionStorage.getItem('modalShown')) {
+    document.getElementById('popup-modal').style.display = 'flex';
+  } else {
+    document.getElementById('popup-modal').style.display = 'none';
+  }
+}
+
+window.onload = showModalIfNeeded;
+
+document.getElementById('agree-btn').onclick = function() {
+  document.getElementById('popup-modal').style.display = 'none';
+  sessionStorage.setItem('modalShown', 'true');
+};
+
+document.getElementById('disagree-btn').onclick = function() {
+  window.location.href = 'https://www.google.com';
+  // Do NOT set modalShown here
+};
+
