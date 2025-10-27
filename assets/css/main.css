@@ -95,7 +95,7 @@ input, select, textarea {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
 		color: #919499;
-		font-size: 14pt;
+		font-size: 1em;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
 	}
@@ -2271,9 +2271,8 @@ input, select, textarea {
 /* Main */
 
 /* Footer */
-
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #282b34;
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2281,6 +2280,7 @@ input, select, textarea {
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
 			color: #fff;
+			text-decoration: none;
 		}
 
 		#footer hr {
@@ -2340,7 +2340,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #282b34 url("images/overlay.png");
+			background: #282b34;
 			color: #eee;
 		}
 
