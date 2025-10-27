@@ -2274,6 +2274,15 @@ input, select, textarea {
 			text-align: justify;
 		}
 
+		#highlights a {
+			width: 100%;           /* responsive scaling */
+			max-width: 400px;      /* limit width to 300px */
+			height: auto;          /* maintain aspect ratio initially */
+			max-height: 400px;     /* cap the height */
+			object-fit: cover;     /* crop image nicely to fill box */
+			margin: 20px auto;
+		}
+
 /* Main */
 
 /* Footer */
@@ -3000,80 +3009,80 @@ input, select, textarea {
 
 		/* Modal Overlay */
 	#popup-modal {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(0,0,0,0.36);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 9999;
-	font-family: 'Source Sans Pro', sans-serif;
-	backdrop-filter: blur(8px);    /* Add this line for blur */
-	-webkit-backdrop-filter: blur(8px); /* Vendor prefix for Safari */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0,0,0,0.36);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+		font-family: 'Source Sans Pro', sans-serif;
+		backdrop-filter: blur(8px);    /* Add this line for blur */
+		-webkit-backdrop-filter: blur(8px); /* Vendor prefix for Safari */
 	}
 
 	/* Modal Box */
 	.modal-box {
-	background: #fff;
-	border-radius: 0.35em;
-	box-shadow: 0 6px 24px rgba(44,72,91,0.13);
-	padding: 2em 1.6em 1.6em 1.6em;
-	width: 82vw;
-	height: 82vh;
-	min-width: 220px;
-	min-height: 320px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+		background: #fff;
+		border-radius: 0.35em;
+		box-shadow: 0 6px 24px rgba(44,72,91,0.13);
+		padding: 2em 1.6em 1.6em 1.6em;
+		width: 82vw;
+		height: 82vh;
+		min-width: 220px;
+		min-height: 320px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 
 	.modal-box h2 {
-	color: #484d55;
-	font-size: 1.22em;
-	font-weight: 700;
-	margin-bottom: 0.8em;
-	font-family: inherit;
+		color: #484d55;
+		font-size: 1.22em;
+		font-weight: 700;
+		margin-bottom: 0.8em;
+		font-family: inherit;
 	}
 
 	.modal-box p {
-	margin-bottom: 1.2em;
-	text-align: justify;
-	font-size: 1em;
-	line-height: 1.7em;
-	color: #919499;
-	font-weight: 400;
-	width: 100%;
+		margin-bottom: 1.2em;
+		text-align: justify;
+		font-size: 1em;
+		line-height: 1.7em;
+		color: #919499;
+		font-weight: 400;
+		width: 100%;
 	}
 
 	.modal-buttons {
-	display: flex;
-	gap: 1em;
-	width: 100%;
-	justify-content: center;
-	flex-wrap: wrap;
+		display: flex;
+		gap: 1em;
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	.modal-buttons button {
-	border: none;
-	border-radius: 0.35em;
-	font-size: 0.9em;
-	font-family: inherit;
-	padding: 0.65em 2.1em;
-	cursor: pointer;
-	background: #444;
-	color: #fff;
-	font-weight: 700;
-	letter-spacing: 0.20em;
-	transition: background 0.14s, color 0.14s;
-	display: flex;               
-	align-items: center;         
-	justify-content: center; 
-	text-align: center;          
+		border: none;
+		border-radius: 0.35em;
+		font-size: 0.9em;
+		font-family: inherit;
+		padding: 0.65em 2.1em;
+		cursor: pointer;
+		background: #444;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 0.20em;
+		transition: background 0.14s, color 0.14s;
+		display: flex;               
+		align-items: center;         
+		justify-content: center; 
+		text-align: center;          
 	}
 
 	.modal-buttons button:hover,
