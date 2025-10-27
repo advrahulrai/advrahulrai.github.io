@@ -2276,7 +2276,7 @@ input, select, textarea {
 
 		#highlights a {
 			width: 100%;           /* responsive scaling */
-			max-width: 400px;      /* limit width to 300px */
+			max-width: 400px;      /* limit width to 400px */
 			height: auto;          /* maintain aspect ratio initially */
 			max-height: 400px;     /* cap the height */
 			object-fit: cover;     /* crop image nicely to fill box */
